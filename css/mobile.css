@@ -22,6 +22,11 @@ html, body {
     padding: 1rem;
 }
 
+#logoImg {
+    width: 35px;
+    height: 35px;
+}
+
 .helpImg {
     width: 35px;
     height: 35px;
@@ -129,6 +134,7 @@ html, body {
     color: gainsboro;
     text-transform: uppercase;
     padding: 0;
+    background-color: #131314;
 }
 
 .keyContainer {

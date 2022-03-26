@@ -22,6 +22,11 @@ html, body {
     padding: 1rem;
 }
 
+#logoImg {
+    width: 35px;
+    height: 35px;
+}
+
 .helpImg {
     width: 35px;
     height: 35px;
@@ -131,6 +136,7 @@ html, body {
     padding: 0;
     max-width: 70px;
     max-height: 70px;
+    background-color: #131314;
 }
 
 .keyContainer {
