@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const consenents = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", 
                         "p", "r", "s", "t", "v", "w"];
-    const vowels = ["a", "e", "i", "o", "u", "y"];
+    const vowels = ["a", "e", "i", "o", "u"];
 
     help.onclick = () => {
         const helpPop = document.getElementById('helpPop');
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function createSquares() {
         const gameBoard = document.getElementById("board")
 
-        for (let index = 0; index < 30; index++) {
+        for (let index = 0; index < 36; index++) {
             let square = document.createElement("div");
             square.classList.add("square");
             square.setAttribute("id", "div1");
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let vowN = document.querySelectorAll('.v');
         // pick out vowels
         while(vow.length < 3) {
-            let numV = Math.floor(Math.random() * 6);
+            let numV = Math.floor(Math.random() * 5);
             if(!vow.includes(vowels[numV])) {
                 vow.push(vowels[numV]);
             }
