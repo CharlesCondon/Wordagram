@@ -122,27 +122,26 @@ html, body {
     justify-content: center;
     align-items: center;
     border: 2px solid rgb(88, 88, 92);
-    min-width: 70px;
-    min-height: 70px; 
+    width: 5vw;
+    height: 5vw; 
     font-size: 2rem;
     font-weight: bold;
     color: gainsboro;
     text-transform: uppercase;
     padding: 0;
+    max-width: 70px;
+    max-height: 70px;
 }
 
 .keyContainer {
     visibility: hidden;
-    height: 275px;
-    width: 420px;
-    position: absolute;
+    height: 250px;
+    width: 36vw;
+    max-width: 440px;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, 0%);
     z-index: 0;
 }
 
@@ -167,15 +166,19 @@ html, body {
     text-transform: uppercase;
     border-radius: 4px;
     user-select: none;
-    width: 70px;
-    height: 70px;
+    width: 5vw;
+    height: 5vw;
+    max-width: 70px;
+    max-height: 70px;
     
 }
 
 .l {
     margin: 4px;
-    width: 70px;
-    height: 70px;
+    width: 5vw;
+    height: 5vw;
+    max-width: 70px;
+    max-height: 70px;
     border: 2px dotted rgb(129, 131, 132);
     border-radius: 4px;
 }
@@ -199,4 +202,11 @@ html, body {
     display: flex;
     justify-content: center;
     touch-action: manipulation;
+}
+
+#midContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
 }

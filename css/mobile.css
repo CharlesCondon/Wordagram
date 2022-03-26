@@ -73,12 +73,12 @@ html, body {
 
 .helper p {
     margin: 20px 0px;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .helper h3 {
     margin: 20px 0px;
-    font-size: 2.25rem;
+    font-size: 1.25rem;
 }
 
 .helper.show {
@@ -106,7 +106,8 @@ html, body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1px;
-    padding: 45px;
+    padding: 20px;
+    margin-bottom: 2rem;
     box-sizing: border-box;
 }
 
@@ -121,8 +122,8 @@ html, body {
     justify-content: center;
     align-items: center;
     border: 2px solid rgb(88, 88, 92);
-    min-width: 70px;
-    min-height: 70px; 
+    width: 13vw;
+    height: 13vw; 
     font-size: 2rem;
     font-weight: bold;
     color: gainsboro;
@@ -132,8 +133,8 @@ html, body {
 
 .keyContainer {
     visibility: hidden;
-    height: 275px;
-    width: 420px;
+    height: 30%;
+    width: 90%;
     position: absolute;
     margin: auto;
     display: flex;
@@ -166,15 +167,15 @@ html, body {
     text-transform: uppercase;
     border-radius: 4px;
     user-select: none;
-    width: 70px;
-    height: 70px;
+    width: 13vw;
+    height: 13vw;
     
 }
 
 .l {
     margin: 4px;
-    width: 70px;
-    height: 70px;
+    width: 13vw;
+    height: 13vw;
     border: 2px dotted rgb(129, 131, 132);
     border-radius: 4px;
 }
