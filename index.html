@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Charles Condon">
+    <meta name="description" content="It's just like wordle but for people who really need a win.">
+    <meta name="keywords" content="Wordle, Wordle2, word, game, Charles, Charels Condon, fun, easy">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordagram</title>
+
+    <script src="js/main.js"></script>
+
+    <link
+      rel="stylesheet"
+      media="only screen and (min-width: 600px)"
+      href="css/desktop.css"
+    />
+  
+    <link
+        rel="stylesheet"
+        media="only screen and (max-width: 599px)"
+        href="css/mobile.css"
+    />
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+        
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+
+<body>
+    <div id="allContainer">
+
+        <div id="head">
+            <img id='logoImg' src='' alt='logo' />
+            <h1>Wordagram</h1>
+            <img class='helpImg' src='/assets/info.png' alt='help' />
+        </div>
+
+        <button id='start' >Start</button>
+
+        <div id="helpPop" class="helper">
+            <h3><b>Drag the letters provided to create as many words as you can!</b></h3>
+            <hr>
+            <p class="instr"> - Each word must be connected together by at least one letter</p>
+            <p class="instr"> - Words must be at least 3 letters long</p>
+            <p class="instr"> - All letters must be used to win</p>
+            <p class="instr"> - Refresh the page to generate new letters</p>
+        </div>
+
+        <div class="boardContainer">
+            <div id="board"></div>
+        </div>
+
+        <div class="keyContainer">
+            <div id="con">
+                <div class="l" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="letter c" id="drag9" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+                <div class="l" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="letter c" id="drag8" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+                <div class="l" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="letter c" id="drag7" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+                <div class="l" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="letter c" id="drag6" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+                <div class="l" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="letter c" id="drag5" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+                <div class="l" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="letter c" id="drag4" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+                <div class="l" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="letter c" id="drag3" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+                <div class="l" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="letter c" id="drag2" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+                <div class="l" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="letter c" id="drag1" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </div>
+            <div id="vow">
+                <div class="l" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="letter v" id="drag12" draggable="true" ondragstart="drag(event)"></div>
+                </div>  
+                <div class="l" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="letter v" id="drag11" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+                <div class="l" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="letter v" id="drag10" draggable="true" ondragstart="drag(event)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
